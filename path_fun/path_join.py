@@ -2,9 +2,9 @@
 
 import os
 
-localtime_path='/etc/localtime'
-
 chroot_path='/chroot/named'
+
+localtime_path='/etc/localtime'
 
 chroot_localtime_path=os.path.join(chroot_path, localtime_path)
 
@@ -18,8 +18,8 @@ The Single Unix Standard specifies:
   - http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap03.html#tag_03_266
   
 So, one would think that the result of joining 2 paths,
-    * /etc/localtime
     * /chroot/named
+    * /etc/localtime
 
 would result in
 
